@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5D4C3591C143CE0002781FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4C3581C143CE0002781FB /* AppDelegate.swift */; };
+		A5D4C35B1C143CE0002781FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4C35A1C143CE0002781FB /* ViewController.swift */; };
+		A5D4C35E1C143CE0002781FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D4C35C1C143CE0002781FB /* Main.storyboard */; };
+		A5D4C3601C143CE0002781FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D4C35F1C143CE0002781FB /* Assets.xcassets */; };
+		A5D4C3631C143CE0002781FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D4C3611C143CE0002781FB /* LaunchScreen.storyboard */; };
+		A5D4C36E1C143CE0002781FB /* Classic_TrekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4C36D1C143CE0002781FB /* Classic_TrekTests.swift */; };
+		A5D4C3791C143CE0002781FB /* Classic_TrekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4C3781C143CE0002781FB /* Classic_TrekUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5D4C36A1C143CE0002781FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5D4C34D1C143CE0002781FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5D4C3541C143CE0002781FB;
+			remoteInfo = "Classic Trek";
+		};
+		A5D4C3751C143CE0002781FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5D4C34D1C143CE0002781FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5D4C3541C143CE0002781FB;
+			remoteInfo = "Classic Trek";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5D4C3551C143CE0002781FB /* Classic Trek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classic Trek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D4C3581C143CE0002781FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5D4C35A1C143CE0002781FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5D4C35D1C143CE0002781FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5D4C35F1C143CE0002781FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5D4C3621C143CE0002781FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5D4C3641C143CE0002781FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D4C3691C143CE0002781FB /* Classic TrekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Classic TrekTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D4C36D1C143CE0002781FB /* Classic_TrekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classic_TrekTests.swift; sourceTree = "<group>"; };
+		A5D4C36F1C143CE0002781FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D4C3741C143CE0002781FB /* Classic TrekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Classic TrekUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D4C3781C143CE0002781FB /* Classic_TrekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classic_TrekUITests.swift; sourceTree = "<group>"; };
+		A5D4C37A1C143CE0002781FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5D4C3521C143CE0002781FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D4C3661C143CE0002781FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D4C3711C143CE0002781FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5D4C34C1C143CE0002781FB = {
+			isa = PBXGroup;
+			children = (
+				A5D4C3571C143CE0002781FB /* Classic Trek */,
+				A5D4C36C1C143CE0002781FB /* Classic TrekTests */,
+				A5D4C3771C143CE0002781FB /* Classic TrekUITests */,
+				A5D4C3561C143CE0002781FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5D4C3561C143CE0002781FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5D4C3551C143CE0002781FB /* Classic Trek.app */,
+				A5D4C3691C143CE0002781FB /* Classic TrekTests.xctest */,
+				A5D4C3741C143CE0002781FB /* Classic TrekUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5D4C3571C143CE0002781FB /* Classic Trek */ = {
+			isa = PBXGroup;
+			children = (
+				A5D4C3581C143CE0002781FB /* AppDelegate.swift */,
+				A5D4C35A1C143CE0002781FB /* ViewController.swift */,
+				A5D4C35C1C143CE0002781FB /* Main.storyboard */,
+				A5D4C35F1C143CE0002781FB /* Assets.xcassets */,
+				A5D4C3611C143CE0002781FB /* LaunchScreen.storyboard */,
+				A5D4C3641C143CE0002781FB /* Info.plist */,
+			);
+			path = "Classic Trek";
+			sourceTree = "<group>";
+		};
+		A5D4C36C1C143CE0002781FB /* Classic TrekTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5D4C36D1C143CE0002781FB /* Classic_TrekTests.swift */,
+				A5D4C36F1C143CE0002781FB /* Info.plist */,
+			);
+			path = "Classic TrekTests";
+			sourceTree = "<group>";
+		};
+		A5D4C3771C143CE0002781FB /* Classic TrekUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5D4C3781C143CE0002781FB /* Classic_TrekUITests.swift */,
+				A5D4C37A1C143CE0002781FB /* Info.plist */,
+			);
+			path = "Classic TrekUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5D4C3541C143CE0002781FB /* Classic Trek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D4C37D1C143CE0002781FB /* Build configuration list for PBXNativeTarget "Classic Trek" */;
+			buildPhases = (
+				A5D4C3511C143CE0002781FB /* Sources */,
+				A5D4C3521C143CE0002781FB /* Frameworks */,
+				A5D4C3531C143CE0002781FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Classic Trek";
+			productName = "Classic Trek";
+			productReference = A5D4C3551C143CE0002781FB /* Classic Trek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5D4C3681C143CE0002781FB /* Classic TrekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D4C3801C143CE0002781FB /* Build configuration list for PBXNativeTarget "Classic TrekTests" */;
+			buildPhases = (
+				A5D4C3651C143CE0002781FB /* Sources */,
+				A5D4C3661C143CE0002781FB /* Frameworks */,
+				A5D4C3671C143CE0002781FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5D4C36B1C143CE0002781FB /* PBXTargetDependency */,
+			);
+			name = "Classic TrekTests";
+			productName = "Classic TrekTests";
+			productReference = A5D4C3691C143CE0002781FB /* Classic TrekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5D4C3731C143CE0002781FB /* Classic TrekUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D4C3831C143CE0002781FB /* Build configuration list for PBXNativeTarget "Classic TrekUITests" */;
+			buildPhases = (
+				A5D4C3701C143CE0002781FB /* Sources */,
+				A5D4C3711C143CE0002781FB /* Frameworks */,
+				A5D4C3721C143CE0002781FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5D4C3761C143CE0002781FB /* PBXTargetDependency */,
+			);
+			name = "Classic TrekUITests";
+			productName = "Classic TrekUITests";
+			productReference = A5D4C3741C143CE0002781FB /* Classic TrekUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5D4C34D1C143CE0002781FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Pocketfiction;
+				TargetAttributes = {
+					A5D4C3541C143CE0002781FB = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = DAF6232P57;
+					};
+					A5D4C3681C143CE0002781FB = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = A5D4C3541C143CE0002781FB;
+					};
+					A5D4C3731C143CE0002781FB = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = A5D4C3541C143CE0002781FB;
+					};
+				};
+			};
+			buildConfigurationList = A5D4C3501C143CE0002781FB /* Build configuration list for PBXProject "Classic Trek" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5D4C34C1C143CE0002781FB;
+			productRefGroup = A5D4C3561C143CE0002781FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5D4C3541C143CE0002781FB /* Classic Trek */,
+				A5D4C3681C143CE0002781FB /* Classic TrekTests */,
+				A5D4C3731C143CE0002781FB /* Classic TrekUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5D4C3531C143CE0002781FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D4C3631C143CE0002781FB /* LaunchScreen.storyboard in Resources */,
+				A5D4C3601C143CE0002781FB /* Assets.xcassets in Resources */,
+				A5D4C35E1C143CE0002781FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D4C3671C143CE0002781FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D4C3721C143CE0002781FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5D4C3511C143CE0002781FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D4C35B1C143CE0002781FB /* ViewController.swift in Sources */,
+				A5D4C3591C143CE0002781FB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D4C3651C143CE0002781FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D4C36E1C143CE0002781FB /* Classic_TrekTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D4C3701C143CE0002781FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D4C3791C143CE0002781FB /* Classic_TrekUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5D4C36B1C143CE0002781FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5D4C3541C143CE0002781FB /* Classic Trek */;
+			targetProxy = A5D4C36A1C143CE0002781FB /* PBXContainerItemProxy */;
+		};
+		A5D4C3761C143CE0002781FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5D4C3541C143CE0002781FB /* Classic Trek */;
+			targetProxy = A5D4C3751C143CE0002781FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5D4C35C1C143CE0002781FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5D4C35D1C143CE0002781FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5D4C3611C143CE0002781FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5D4C3621C143CE0002781FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5D4C37B1C143CE0002781FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A5D4C37C1C143CE0002781FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5D4C37E1C143CE0002781FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Classic Trek/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketfiction.classictrek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8dd49824-a758-4b5e-978a-e197f9f35781";
+			};
+			name = Debug;
+		};
+		A5D4C37F1C143CE0002781FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Classic Trek/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketfiction.classictrek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8dd49824-a758-4b5e-978a-e197f9f35781";
+			};
+			name = Release;
+		};
+		A5D4C3811C143CE0002781FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Classic TrekTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pocketfiction.Classic-TrekTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Classic Trek.app/Classic Trek";
+			};
+			name = Debug;
+		};
+		A5D4C3821C143CE0002781FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Classic TrekTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pocketfiction.Classic-TrekTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Classic Trek.app/Classic Trek";
+			};
+			name = Release;
+		};
+		A5D4C3841C143CE0002781FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Classic TrekUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pocketfiction.Classic-TrekUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Classic Trek";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A5D4C3851C143CE0002781FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Classic TrekUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pocketfiction.Classic-TrekUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Classic Trek";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5D4C3501C143CE0002781FB /* Build configuration list for PBXProject "Classic Trek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D4C37B1C143CE0002781FB /* Debug */,
+				A5D4C37C1C143CE0002781FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5D4C37D1C143CE0002781FB /* Build configuration list for PBXNativeTarget "Classic Trek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D4C37E1C143CE0002781FB /* Debug */,
+				A5D4C37F1C143CE0002781FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5D4C3801C143CE0002781FB /* Build configuration list for PBXNativeTarget "Classic TrekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D4C3811C143CE0002781FB /* Debug */,
+				A5D4C3821C143CE0002781FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5D4C3831C143CE0002781FB /* Build configuration list for PBXNativeTarget "Classic TrekUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D4C3841C143CE0002781FB /* Debug */,
+				A5D4C3851C143CE0002781FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5D4C34D1C143CE0002781FB /* Project object */;
+}
