@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5AF58DB1C14865B00F05A63 /* TrekSoundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5AF58DA1C14865B00F05A63 /* TrekSoundtrack.mp3 */; };
 		A5D4C3591C143CE0002781FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4C3581C143CE0002781FB /* AppDelegate.swift */; };
 		A5D4C35B1C143CE0002781FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4C35A1C143CE0002781FB /* ViewController.swift */; };
 		A5D4C35E1C143CE0002781FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D4C35C1C143CE0002781FB /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5AF58DA1C14865B00F05A63 /* TrekSoundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TrekSoundtrack.mp3; sourceTree = "<group>"; };
 		A5D4C3551C143CE0002781FB /* Classic Trek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classic Trek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D4C3581C143CE0002781FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5D4C35A1C143CE0002781FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		A5D4C3571C143CE0002781FB /* Classic Trek */ = {
 			isa = PBXGroup;
 			children = (
+				A5AF58DA1C14865B00F05A63 /* TrekSoundtrack.mp3 */,
 				A5D4C3581C143CE0002781FB /* AppDelegate.swift */,
 				A5D4C35A1C143CE0002781FB /* ViewController.swift */,
 				A5D4C35C1C143CE0002781FB /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5AF58DB1C14865B00F05A63 /* TrekSoundtrack.mp3 in Resources */,
 				A5D4C3631C143CE0002781FB /* LaunchScreen.storyboard in Resources */,
 				A5D4C3601C143CE0002781FB /* Assets.xcassets in Resources */,
 				A5D4C35E1C143CE0002781FB /* Main.storyboard in Resources */,
@@ -493,6 +497,7 @@
 				A5D4C37F1C143CE0002781FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5D4C3801C143CE0002781FB /* Build configuration list for PBXNativeTarget "Classic TrekTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +506,7 @@
 				A5D4C3821C143CE0002781FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5D4C3831C143CE0002781FB /* Build configuration list for PBXNativeTarget "Classic TrekUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +515,7 @@
 				A5D4C3851C143CE0002781FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
