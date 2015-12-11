@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="ARCADECLASSIC.TTF">
@@ -44,89 +43,104 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="naS-cj-H08">
-                                <rect key="frame" x="0.0" y="432" width="600" height="168"/>
+                                <rect key="frame" x="0.0" y="509" width="600" height="91"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZfK-hq-m6S" userLabel="MainTextInputField">
-                                        <rect key="frame" x="8" y="8" width="584" height="30"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXa-xg-IkR">
+                                        <rect key="frame" x="0.0" y="44" width="600" height="47"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZfK-hq-m6S" userLabel="MainTextInputField">
+                                                <rect key="frame" x="8" y="9" width="584" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="5zF-YJ-JHP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" spellCheckingType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.67843137249999996" green="0.63921568630000003" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="5zF-YJ-JHP"/>
+                                            <constraint firstItem="ZfK-hq-m6S" firstAttribute="leading" secondItem="yXa-xg-IkR" secondAttribute="leading" constant="8" id="Owh-5Y-fiV"/>
+                                            <constraint firstItem="ZfK-hq-m6S" firstAttribute="top" secondItem="yXa-xg-IkR" secondAttribute="top" constant="9" id="PIN-Mm-Hfn"/>
+                                            <constraint firstAttribute="height" constant="47" id="PfE-KH-zzS"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZfK-hq-m6S" secondAttribute="trailing" constant="8" id="e52-ar-Ke8"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZfK-hq-m6S" secondAttribute="bottom" constant="8" id="eyj-H6-vuq"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" spellCheckingType="no"/>
-                                    </textField>
+                                    </view>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWb-j7-zju" userLabel="MainButtonToolbar">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <color key="backgroundColor" red="0.23529411764705882" green="0.20000000000000001" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                        <items>
+                                            <barButtonItem title="Status |" width="62" id="35a-ZI-jQW" userLabel="StatusButton"/>
+                                            <barButtonItem title="SR Scan |" width="80" id="CVP-bR-0Ro" userLabel="SRScanButton"/>
+                                            <barButtonItem title="Chart |" id="eME-Z2-CMT" userLabel="ChartButton"/>
+                                            <barButtonItem title="Commands |" width="103" id="NXm-Lm-bQn" userLabel="CommandsButton"/>
+                                            <barButtonItem title="Help |" width="49" id="IDi-ey-LnC" userLabel="HelpButton"/>
+                                            <barButtonItem title="Computer |" width="94" id="8yk-N3-VBZ" userLabel="ComputerButton"/>
+                                            <barButtonItem title="Move" id="lpd-5i-eoO" userLabel="MoveButton">
+                                                <connections>
+                                                    <action selector="MoveButtonAction:" destination="BYZ-38-t0r" id="eI1-cy-XwO"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="barTintColor" red="0.23529411759999999" green="0.20000000000000001" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                    </toolbar>
                                 </subviews>
-                                <color key="backgroundColor" red="0.67843137254901964" green="0.63921568627450975" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="ZfK-hq-m6S" firstAttribute="leading" secondItem="naS-cj-H08" secondAttribute="leading" constant="8" id="TbP-Qe-Y6d"/>
-                                    <constraint firstItem="ZfK-hq-m6S" firstAttribute="top" secondItem="naS-cj-H08" secondAttribute="top" constant="8" id="kHD-tb-Xcn"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZfK-hq-m6S" secondAttribute="trailing" constant="8" id="nE4-CZ-QRc"/>
+                                    <constraint firstItem="yXa-xg-IkR" firstAttribute="top" secondItem="OWb-j7-zju" secondAttribute="bottom" id="5uB-Ru-Swn"/>
+                                    <constraint firstItem="yXa-xg-IkR" firstAttribute="leading" secondItem="naS-cj-H08" secondAttribute="leading" id="Hbc-C8-2Ym"/>
+                                    <constraint firstItem="yXa-xg-IkR" firstAttribute="leading" secondItem="naS-cj-H08" secondAttribute="leading" id="cvQ-c9-OIB"/>
+                                    <constraint firstAttribute="bottom" secondItem="yXa-xg-IkR" secondAttribute="bottom" id="dNx-r7-7fV"/>
+                                    <constraint firstItem="OWb-j7-zju" firstAttribute="trailing" secondItem="yXa-xg-IkR" secondAttribute="trailing" id="fwF-2x-zSI"/>
+                                    <constraint firstItem="OWb-j7-zju" firstAttribute="leading" secondItem="naS-cj-H08" secondAttribute="leading" id="pZN-a6-NSc"/>
+                                    <constraint firstAttribute="height" constant="91" id="qcZ-IQ-Hej"/>
+                                    <constraint firstItem="yXa-xg-IkR" firstAttribute="top" secondItem="OWb-j7-zju" secondAttribute="bottom" id="uhA-6N-dHI"/>
+                                    <constraint firstAttribute="trailing" secondItem="yXa-xg-IkR" secondAttribute="trailing" id="ykV-f9-0dc"/>
+                                    <constraint firstAttribute="bottom" secondItem="yXa-xg-IkR" secondAttribute="bottom" id="yly-Ye-961"/>
+                                    <constraint firstAttribute="trailing" secondItem="yXa-xg-IkR" secondAttribute="trailing" id="zyb-Mt-TxY"/>
                                 </constraints>
                             </view>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWb-j7-zju" userLabel="MainButtonToolbar">
-                                <rect key="frame" x="0.0" y="388" width="600" height="44"/>
-                                <color key="backgroundColor" red="0.23529411764705882" green="0.20000000000000001" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Fkg-ng-UKK"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem title="Status |" width="62" id="35a-ZI-jQW" userLabel="StatusButton"/>
-                                    <barButtonItem title="SR Scan |" width="80" id="CVP-bR-0Ro" userLabel="SRScanButton"/>
-                                    <barButtonItem title="Chart |" id="eME-Z2-CMT" userLabel="ChartButton"/>
-                                    <barButtonItem title="Commands |" width="103" id="NXm-Lm-bQn" userLabel="CommandsButton"/>
-                                    <barButtonItem title="Help |" width="49" id="IDi-ey-LnC" userLabel="HelpButton"/>
-                                    <barButtonItem title="Computer |" width="94" id="8yk-N3-VBZ" userLabel="ComputerButton"/>
-                                    <barButtonItem title="Move" id="lpd-5i-eoO" userLabel="MoveButton">
-                                        <connections>
-                                            <action selector="MoveButtonAction:" destination="BYZ-38-t0r" id="eI1-cy-XwO"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="barTintColor" red="0.23529411759999999" green="0.20000000000000001" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
-                            </toolbar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M82-iO-fdq">
-                                <rect key="frame" x="0.0" y="64" width="600" height="324"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="445"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="M82-iO-fdq" secondAttribute="height" multiplier="50:27" id="dsv-fg-I2j"/>
-                                </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="OWb-j7-zju" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0kb-yT-YRZ"/>
-                            <constraint firstItem="OWb-j7-zju" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0us-NH-l2b"/>
                             <constraint firstItem="M82-iO-fdq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3rV-gX-HHs"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="naS-cj-H08" secondAttribute="bottom" id="Etw-Sl-Ozg"/>
+                            <constraint firstItem="naS-cj-H08" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B5b-MN-UpG"/>
+                            <constraint firstAttribute="trailing" secondItem="naS-cj-H08" secondAttribute="trailing" id="CuQ-u6-ZkW"/>
+                            <constraint firstItem="naS-cj-H08" firstAttribute="top" secondItem="M82-iO-fdq" secondAttribute="bottom" id="EI5-Ec-IDA"/>
+                            <constraint firstItem="naS-cj-H08" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H8t-Ou-D9x"/>
                             <constraint firstItem="Fu2-RG-qmV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HEJ-07-kL2"/>
-                            <constraint firstItem="OWb-j7-zju" firstAttribute="top" secondItem="M82-iO-fdq" secondAttribute="bottom" id="HRw-mF-rMg"/>
                             <constraint firstItem="ILw-Je-LhF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hki-tD-tfY"/>
                             <constraint firstItem="ILw-Je-LhF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ilj-Tt-yqL"/>
-                            <constraint firstItem="naS-cj-H08" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="J40-4V-Xlc"/>
                             <constraint firstItem="Fu2-RG-qmV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N8Z-ys-TO3"/>
-                            <constraint firstItem="naS-cj-H08" firstAttribute="top" secondItem="OWb-j7-zju" secondAttribute="bottom" id="Nw5-r1-FIp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="naS-cj-H08" secondAttribute="bottom" id="P9w-1D-zW7"/>
                             <constraint firstAttribute="trailing" secondItem="M82-iO-fdq" secondAttribute="trailing" id="RZE-Gl-sXa"/>
-                            <constraint firstItem="naS-cj-H08" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SfL-cu-bYb"/>
-                            <constraint firstItem="OWb-j7-zju" firstAttribute="top" secondItem="M82-iO-fdq" secondAttribute="bottom" id="WJi-Do-xW4"/>
+                            <constraint firstItem="naS-cj-H08" firstAttribute="top" secondItem="M82-iO-fdq" secondAttribute="bottom" id="c0W-wb-l2Z"/>
                             <constraint firstAttribute="trailing" secondItem="Fu2-RG-qmV" secondAttribute="trailing" id="dbi-22-Ll4"/>
                             <constraint firstAttribute="trailing" secondItem="M82-iO-fdq" secondAttribute="trailing" id="dt3-aw-Sru"/>
-                            <constraint firstAttribute="trailing" secondItem="naS-cj-H08" secondAttribute="trailing" id="fdh-gc-A6t"/>
-                            <constraint firstItem="naS-cj-H08" firstAttribute="top" secondItem="OWb-j7-zju" secondAttribute="bottom" id="hYZ-pC-Gvd"/>
                             <constraint firstItem="Fu2-RG-qmV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hqk-gI-ThI"/>
                             <constraint firstItem="ILw-Je-LhF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ji4-CZ-heJ"/>
                             <constraint firstItem="M82-iO-fdq" firstAttribute="top" secondItem="ILw-Je-LhF" secondAttribute="bottom" id="kjL-cq-lEk"/>
+                            <constraint firstItem="M82-iO-fdq" firstAttribute="top" secondItem="ILw-Je-LhF" secondAttribute="bottom" id="lp6-cu-1RD"/>
                             <constraint firstItem="M82-iO-fdq" firstAttribute="top" secondItem="ILw-Je-LhF" secondAttribute="bottom" id="qDg-Np-62j"/>
-                            <constraint firstAttribute="trailing" secondItem="OWb-j7-zju" secondAttribute="trailing" id="r4u-2L-pZV"/>
                             <constraint firstItem="M82-iO-fdq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sA7-3O-PZX"/>
+                            <constraint firstAttribute="trailing" secondItem="M82-iO-fdq" secondAttribute="trailing" id="sbe-Aj-6Gn"/>
                             <constraint firstItem="M82-iO-fdq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="t1I-IK-nYb"/>
+                            <constraint firstItem="M82-iO-fdq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="t1o-Ph-b8a"/>
                             <constraint firstAttribute="trailing" secondItem="ILw-Je-LhF" secondAttribute="trailing" id="z9S-Za-t23"/>
+                            <constraint firstItem="naS-cj-H08" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="509" id="zjq-q2-G1W"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomHeight" destination="P9w-1D-zW7" id="n8N-cA-MF4"/>
                         <outlet property="inputField" destination="ZfK-hq-m6S" id="P20-cm-lNr"/>
                         <outlet property="textView" destination="M82-iO-fdq" id="GAE-lk-9jq"/>
                     </connections>
