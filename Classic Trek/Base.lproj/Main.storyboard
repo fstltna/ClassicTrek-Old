@@ -104,13 +104,13 @@
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M82-iO-fdq">
                                 <rect key="frame" x="0.0" y="64" width="600" height="445"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="M82-iO-fdq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3rV-gX-HHs"/>
                             <constraint firstItem="naS-cj-H08" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B5b-MN-UpG"/>

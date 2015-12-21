@@ -15,12 +15,14 @@ class ViewController: UIViewController {
         
         let userinput = inputField.text
         print(userinput)
-        // Do here whatever you want with the user's input!
+        updateTextView(userinput!)
+        inputField.text = ""
     }
     @IBOutlet var bottomHeight: NSLayoutConstraint!
     
     @IBOutlet var inputField: UITextField!
-    
+    var myArgs = CStringArray(["runIT", "", "", ""])
+
     var bgMusic:AVAudioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
@@ -35,10 +37,14 @@ class ViewController: UIViewController {
         bgMusic.numberOfLoops = 1
         bgMusic.prepareToPlay()
         bgMusic.play()
+        
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), {
 
-        let inputfortextarea: String = ".  .  .  .  .  .  .  . \n.  .  .  .  .  .  .  . \n.  .  *  .  .  .  .  . \n.  .  .  .  *  .  .  . \n"
-        // Whatever you pass in the updateTextView Function will be displayed in the textView
-        updateTextView(inputfortextarea)
+            
+            let returnedString = mainer(self.myArgs.numberOfElements, &self.myArgs.pointers[0])
+            
+        })
+        
     }
     
     func keyboardWillShow(notification:NSNotification) {
@@ -73,7 +79,8 @@ class ViewController: UIViewController {
     
     // Whatever passed in the updateTextView Function will be displayed in the textView
     func updateTextView(inputText: String) -> String {
-        textView.text = inputText
+        textView.text = textView.text + "\n" + inputText
+        
         return inputText
     }
     
@@ -81,7 +88,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 
 }
 

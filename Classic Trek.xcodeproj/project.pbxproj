@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E6806F71C21E27B00632748 /* CStringArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6806F61C21E27B00632748 /* CStringArray.swift */; };
+		6E6807051C21F2BA00632748 /* ai.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E6806FA1C21F2BA00632748 /* ai.c */; };
+		6E6807061C21F2BA00632748 /* battle.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E6806FB1C21F2BA00632748 /* battle.c */; };
+		6E6807071C21F2BA00632748 /* events.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E6806FC1C21F2BA00632748 /* events.c */; };
+		6E6807081C21F2BA00632748 /* finish.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E6806FD1C21F2BA00632748 /* finish.c */; };
+		6E6807091C21F2BA00632748 /* moving.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E6806FE1C21F2BA00632748 /* moving.c */; };
+		6E68070A1C21F2BA00632748 /* osx.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E6806FF1C21F2BA00632748 /* osx.c */; };
+		6E68070B1C21F2BA00632748 /* planets.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E6807001C21F2BA00632748 /* planets.c */; };
+		6E68070C1C21F2BA00632748 /* reports.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E6807011C21F2BA00632748 /* reports.c */; };
+		6E68070D1C21F2BA00632748 /* setup.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E6807021C21F2BA00632748 /* setup.c */; };
+		6E68070E1C21F2BA00632748 /* sst.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E6807031C21F2BA00632748 /* sst.c */; };
 		A5AF58DB1C14865B00F05A63 /* TrekSoundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5AF58DA1C14865B00F05A63 /* TrekSoundtrack.mp3 */; };
 		A5D4C3591C143CE0002781FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4C3581C143CE0002781FB /* AppDelegate.swift */; };
 		A5D4C35B1C143CE0002781FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4C35A1C143CE0002781FB /* ViewController.swift */; };
 		A5D4C35E1C143CE0002781FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D4C35C1C143CE0002781FB /* Main.storyboard */; };
 		A5D4C3601C143CE0002781FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D4C35F1C143CE0002781FB /* Assets.xcassets */; };
-		A5D4C3631C143CE0002781FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D4C3611C143CE0002781FB /* LaunchScreen.storyboard */; };
 		A5D4C36E1C143CE0002781FB /* Classic_TrekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4C36D1C143CE0002781FB /* Classic_TrekTests.swift */; };
 		A5D4C3791C143CE0002781FB /* Classic_TrekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4C3781C143CE0002781FB /* Classic_TrekUITests.swift */; };
 /* End PBXBuildFile section */
@@ -35,14 +45,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E1B68661C1C560C005DE922 /* Classic Trek-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Classic Trek-Bridging-Header.h"; sourceTree = "<group>"; };
 		6E240C111C19E85900B3FAA2 /* ARCADECLASSIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARCADECLASSIC.TTF; sourceTree = "<group>"; };
+		6E6806F61C21E27B00632748 /* CStringArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CStringArray.swift; sourceTree = "<group>"; };
+		6E6806FA1C21F2BA00632748 /* ai.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ai.c; sourceTree = "<group>"; };
+		6E6806FB1C21F2BA00632748 /* battle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = battle.c; sourceTree = "<group>"; };
+		6E6806FC1C21F2BA00632748 /* events.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = events.c; sourceTree = "<group>"; };
+		6E6806FD1C21F2BA00632748 /* finish.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = finish.c; sourceTree = "<group>"; };
+		6E6806FE1C21F2BA00632748 /* moving.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = moving.c; sourceTree = "<group>"; };
+		6E6806FF1C21F2BA00632748 /* osx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = osx.c; sourceTree = "<group>"; };
+		6E6807001C21F2BA00632748 /* planets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = planets.c; sourceTree = "<group>"; };
+		6E6807011C21F2BA00632748 /* reports.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reports.c; sourceTree = "<group>"; };
+		6E6807021C21F2BA00632748 /* setup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = setup.c; sourceTree = "<group>"; };
+		6E6807031C21F2BA00632748 /* sst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sst.c; sourceTree = "<group>"; };
+		6E6807041C21F2BA00632748 /* sst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sst.h; sourceTree = "<group>"; };
 		A5AF58DA1C14865B00F05A63 /* TrekSoundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TrekSoundtrack.mp3; sourceTree = "<group>"; };
 		A5D4C3551C143CE0002781FB /* Classic Trek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classic Trek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D4C3581C143CE0002781FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5D4C35A1C143CE0002781FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5D4C35D1C143CE0002781FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5D4C35F1C143CE0002781FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A5D4C3621C143CE0002781FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5D4C3641C143CE0002781FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5D4C3691C143CE0002781FB /* Classic TrekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Classic TrekTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D4C36D1C143CE0002781FB /* Classic_TrekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classic_TrekTests.swift; sourceTree = "<group>"; };
@@ -77,6 +99,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E1B686A1C1C57D8005DE922 /* cSrcCode */ = {
+			isa = PBXGroup;
+			children = (
+				6E6806FA1C21F2BA00632748 /* ai.c */,
+				6E6806FB1C21F2BA00632748 /* battle.c */,
+				6E6806FC1C21F2BA00632748 /* events.c */,
+				6E6806FD1C21F2BA00632748 /* finish.c */,
+				6E6806FE1C21F2BA00632748 /* moving.c */,
+				6E6806FF1C21F2BA00632748 /* osx.c */,
+				6E6807001C21F2BA00632748 /* planets.c */,
+				6E6807011C21F2BA00632748 /* reports.c */,
+				6E6807021C21F2BA00632748 /* setup.c */,
+				6E6807031C21F2BA00632748 /* sst.c */,
+				6E6807041C21F2BA00632748 /* sst.h */,
+			);
+			name = cSrcCode;
+			sourceTree = "<group>";
+		};
+		6E1B69771C1CA34A005DE922 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		A5D4C34C1C143CE0002781FB = {
 			isa = PBXGroup;
 			children = (
@@ -100,14 +147,17 @@
 		A5D4C3571C143CE0002781FB /* Classic Trek */ = {
 			isa = PBXGroup;
 			children = (
+				6E1B686A1C1C57D8005DE922 /* cSrcCode */,
 				A5AF58DA1C14865B00F05A63 /* TrekSoundtrack.mp3 */,
 				6E240C111C19E85900B3FAA2 /* ARCADECLASSIC.TTF */,
 				A5D4C3581C143CE0002781FB /* AppDelegate.swift */,
+				6E6806F61C21E27B00632748 /* CStringArray.swift */,
 				A5D4C35A1C143CE0002781FB /* ViewController.swift */,
+				6E1B69771C1CA34A005DE922 /* Classes */,
 				A5D4C35C1C143CE0002781FB /* Main.storyboard */,
 				A5D4C35F1C143CE0002781FB /* Assets.xcassets */,
-				A5D4C3611C143CE0002781FB /* LaunchScreen.storyboard */,
 				A5D4C3641C143CE0002781FB /* Info.plist */,
+				6E1B68661C1C560C005DE922 /* Classic Trek-Bridging-Header.h */,
 			);
 			path = "Classic Trek";
 			sourceTree = "<group>";
@@ -236,7 +286,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5AF58DB1C14865B00F05A63 /* TrekSoundtrack.mp3 in Resources */,
-				A5D4C3631C143CE0002781FB /* LaunchScreen.storyboard in Resources */,
 				A5D4C3601C143CE0002781FB /* Assets.xcassets in Resources */,
 				A5D4C35E1C143CE0002781FB /* Main.storyboard in Resources */,
 			);
@@ -263,8 +312,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6807071C21F2BA00632748 /* events.c in Sources */,
+				6E6807091C21F2BA00632748 /* moving.c in Sources */,
 				A5D4C35B1C143CE0002781FB /* ViewController.swift in Sources */,
+				6E68070C1C21F2BA00632748 /* reports.c in Sources */,
+				6E6807081C21F2BA00632748 /* finish.c in Sources */,
+				6E6807061C21F2BA00632748 /* battle.c in Sources */,
+				6E68070E1C21F2BA00632748 /* sst.c in Sources */,
 				A5D4C3591C143CE0002781FB /* AppDelegate.swift in Sources */,
+				6E68070A1C21F2BA00632748 /* osx.c in Sources */,
+				6E68070B1C21F2BA00632748 /* planets.c in Sources */,
+				6E68070D1C21F2BA00632748 /* setup.c in Sources */,
+				6E6806F71C21E27B00632748 /* CStringArray.swift in Sources */,
+				6E6807051C21F2BA00632748 /* ai.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,14 +366,6 @@
 				A5D4C35D1C143CE0002781FB /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A5D4C3611C143CE0002781FB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5D4C3621C143CE0002781FB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -407,14 +459,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = "Classic Trek/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketfiction.classictrek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classic Trek/Classic Trek-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -423,14 +479,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = "Classic Trek/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketfiction.classictrek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classic Trek/Classic Trek-Bridging-Header.h";
 			};
 			name = Release;
 		};
