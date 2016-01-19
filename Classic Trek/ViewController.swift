@@ -11,13 +11,51 @@ import AVFoundation
 
 class ViewController: UIViewController {
     @IBOutlet var textView: UITextView!
+    
+    @IBAction func StatusButtonAction(sender: AnyObject) {
+        
+       
+    }
+    
+    @IBAction func SRScanButtonAction(sender: AnyObject) {
+        
+        
+    }
+    
+    @IBAction func ChartButtonAction(sender: AnyObject) {
+//        let userinput = inputField.text
+//        print(userinput)
+//        updateTextView(userinput!)
+//        inputField.text = ""
+        
+        
+    }
+    
+    @IBAction func CommandsButtonAction(sender: AnyObject) {
+        
+        helpme()
+        
+    }
+    
+    @IBAction func HelpButtonAction(sender: AnyObject) {
+        
+        help()
+    }
+    
+    @IBAction func ComputerButtonAction(sender: AnyObject) {
+        
+        movebaddy(300,300, 100, 100)
+      
+        
+    }
+    
     @IBAction func MoveButtonAction(sender: AnyObject) {
         
-        let userinput = inputField.text
-        print(userinput)
-        updateTextView(userinput!)
-        inputField.text = ""
+        movcom()
     }
+    
+
+    
     @IBOutlet var bottomHeight: NSLayoutConstraint!
     
     @IBOutlet var inputField: UITextField!
@@ -41,7 +79,7 @@ class ViewController: UIViewController {
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), {
 
             
-            let returnedString = mainer(self.myArgs.numberOfElements, &self.myArgs.pointers[0])
+//            let returnedString = mainer(self.myArgs.numberOfElements, &self.myArgs.pointers[0])
             
         })
         

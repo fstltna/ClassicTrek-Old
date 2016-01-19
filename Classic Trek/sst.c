@@ -227,6 +227,11 @@ static void listCommands(int x) {
 }
 
 static void helpme(void) {
+    // This is Test Version
+    prout("This is Mine Testing message ++++HYI++++")
+    ;
+    prout("======  Command BUTTON =======")
+    ;
 	int i, j;
 	char cmdbuf[32];
 	char linebuf[132];
@@ -290,7 +295,7 @@ static void helpme(void) {
 }
 
 static void makemoves(void) {
-	int i, hitme;
+  	int i, hitme;
 	char ch;
 	while (TRUE) { /* command loop */
 		hitme = FALSE;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="ARCADECLASSIC.TTF">
@@ -71,15 +71,39 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <color key="backgroundColor" red="0.23529411764705882" green="0.20000000000000001" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                         <items>
-                                            <barButtonItem title="Status |" width="62" id="35a-ZI-jQW" userLabel="StatusButton"/>
-                                            <barButtonItem title="SR Scan |" width="80" id="CVP-bR-0Ro" userLabel="SRScanButton"/>
-                                            <barButtonItem title="Chart |" id="eME-Z2-CMT" userLabel="ChartButton"/>
-                                            <barButtonItem title="Commands |" width="103" id="NXm-Lm-bQn" userLabel="CommandsButton"/>
-                                            <barButtonItem title="Help |" width="49" id="IDi-ey-LnC" userLabel="HelpButton"/>
-                                            <barButtonItem title="Computer |" width="94" id="8yk-N3-VBZ" userLabel="ComputerButton"/>
+                                            <barButtonItem title="Status |" width="62" id="35a-ZI-jQW" userLabel="StatusButton">
+                                                <connections>
+                                                    <action selector="StatusButtonAction:" destination="BYZ-38-t0r" id="Tuz-je-5JW"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="SR Scan |" width="80" id="CVP-bR-0Ro" userLabel="SRScanButton">
+                                                <connections>
+                                                    <action selector="SRScanButtonAction:" destination="BYZ-38-t0r" id="ahZ-XV-o0T"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Chart |" id="eME-Z2-CMT" userLabel="ChartButton">
+                                                <connections>
+                                                    <action selector="ChartButtonAction:" destination="BYZ-38-t0r" id="umi-QS-6fO"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Commands |" width="103" id="NXm-Lm-bQn" userLabel="CommandsButton">
+                                                <connections>
+                                                    <action selector="CommandsButtonAction:" destination="BYZ-38-t0r" id="JeF-tI-veL"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Help |" width="49" id="IDi-ey-LnC" userLabel="HelpButton">
+                                                <connections>
+                                                    <action selector="HelpButtonAction:" destination="BYZ-38-t0r" id="Hco-69-NI4"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Computer |" width="94" id="8yk-N3-VBZ" userLabel="ComputerButton">
+                                                <connections>
+                                                    <action selector="ComputerButtonAction:" destination="BYZ-38-t0r" id="6Gd-Fe-cMW"/>
+                                                </connections>
+                                            </barButtonItem>
                                             <barButtonItem title="Move" id="lpd-5i-eoO" userLabel="MoveButton">
                                                 <connections>
-                                                    <action selector="MoveButtonAction:" destination="BYZ-38-t0r" id="eI1-cy-XwO"/>
+                                                    <action selector="MoveButtonAction:" destination="BYZ-38-t0r" id="OdY-J9-k9h"/>
                                                 </connections>
                                             </barButtonItem>
                                         </items>

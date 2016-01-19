@@ -927,6 +927,12 @@ void probe(void) {
 }
 
 void help(void) {
+    // This is Test Version
+    prout("This is Mine Testing message ++++HYI++++")
+    ;
+    prout("======  Help BUTTON =======")
+    ;
+    
 	/* There's more than one way to move in this game! */
 	double ddist, xdist, probf;
 	int line, l, ix, iy;
