@@ -13,6 +13,3 @@
 #import "planets.c"
 #import "reports.c"
 #import "setup.c"
-
-//char mainer(long argc, char *argv[]);
-//void tFreeMemory ();

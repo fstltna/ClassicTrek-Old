@@ -67,18 +67,11 @@ static int tryexit(int lookx, int looky, int ienm, int loccom, int irun) {
 
 
 static void movebaddy(int comx, int comy, int loccom, int ienm) {
-    // This is Test Version
-    prout("This is Mine Testing message ++++HYI++++")
-    ;
-    prout("======  Computer BUTTON =======")
-    ;
-    
-    int motion, mdist, nsteps, mx, my, nextx, nexty, lookx, looky, ll;
+	int motion, mdist, nsteps, mx, my, nextx, nexty, lookx, looky, ll;
 	int irun = 0;
 	int krawlx, krawly;
 	int success;
 	int attempts;
-
 	/* This should probably be just comhere + ishere */
 	int nbaddys = skill > SGOOD ?
 				  (int)((comhere*2 + ishere*2+klhere*1.23+irhere*1.5)/2.0):
@@ -276,13 +269,6 @@ static void movebaddy(int comx, int comy, int loccom, int ienm) {
 }
 
 void movcom(void) {
-    // This is Test Version
-    prout("This is Mine Testing message ++++HYI++++")
-    ;
-    prout("======  Move BUTTON =======")
-    ;
-    
-    
 	int ix, iy, i;
 
 #ifdef DEBUG

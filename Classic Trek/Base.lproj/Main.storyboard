@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C31f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="ARCADECLASSIC.TTF">
@@ -24,6 +24,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILw-Je-LhF">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="d9e-m8-GgD"/>
                                 </constraints>
@@ -37,6 +38,7 @@
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fu2-RG-qmV">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.047058823529411764" green="0.32549019607843138" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Tz3-Pz-bae"/>
@@ -50,6 +52,7 @@
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZfK-hq-m6S" userLabel="MainTextInputField">
                                                 <rect key="frame" x="8" y="9" width="584" height="30"/>
+                                                <animations/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="5zF-YJ-JHP"/>
@@ -58,6 +61,7 @@
                                                 <textInputTraits key="textInputTraits" spellCheckingType="no"/>
                                             </textField>
                                         </subviews>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.67843137249999996" green="0.63921568630000003" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="ZfK-hq-m6S" firstAttribute="leading" secondItem="yXa-xg-IkR" secondAttribute="leading" constant="8" id="Owh-5Y-fiV"/>
@@ -69,41 +73,18 @@
                                     </view>
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWb-j7-zju" userLabel="MainButtonToolbar">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.23529411764705882" green="0.20000000000000001" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                         <items>
-                                            <barButtonItem title="Status |" width="62" id="35a-ZI-jQW" userLabel="StatusButton">
-                                                <connections>
-                                                    <action selector="StatusButtonAction:" destination="BYZ-38-t0r" id="Tuz-je-5JW"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem title="SR Scan |" width="80" id="CVP-bR-0Ro" userLabel="SRScanButton">
-                                                <connections>
-                                                    <action selector="SRScanButtonAction:" destination="BYZ-38-t0r" id="ahZ-XV-o0T"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem title="Chart |" id="eME-Z2-CMT" userLabel="ChartButton">
-                                                <connections>
-                                                    <action selector="ChartButtonAction:" destination="BYZ-38-t0r" id="umi-QS-6fO"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem title="Commands |" width="103" id="NXm-Lm-bQn" userLabel="CommandsButton">
-                                                <connections>
-                                                    <action selector="CommandsButtonAction:" destination="BYZ-38-t0r" id="JeF-tI-veL"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem title="Help |" width="49" id="IDi-ey-LnC" userLabel="HelpButton">
-                                                <connections>
-                                                    <action selector="HelpButtonAction:" destination="BYZ-38-t0r" id="Hco-69-NI4"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem title="Computer |" width="94" id="8yk-N3-VBZ" userLabel="ComputerButton">
-                                                <connections>
-                                                    <action selector="ComputerButtonAction:" destination="BYZ-38-t0r" id="6Gd-Fe-cMW"/>
-                                                </connections>
-                                            </barButtonItem>
+                                            <barButtonItem title="Status |" width="62" id="35a-ZI-jQW" userLabel="StatusButton"/>
+                                            <barButtonItem title="SR Scan |" width="80" id="CVP-bR-0Ro" userLabel="SRScanButton"/>
+                                            <barButtonItem title="Chart |" id="eME-Z2-CMT" userLabel="ChartButton"/>
+                                            <barButtonItem title="Commands |" width="103" id="NXm-Lm-bQn" userLabel="CommandsButton"/>
+                                            <barButtonItem title="Help |" width="49" id="IDi-ey-LnC" userLabel="HelpButton"/>
+                                            <barButtonItem title="Computer |" width="94" id="8yk-N3-VBZ" userLabel="ComputerButton"/>
                                             <barButtonItem title="Move" id="lpd-5i-eoO" userLabel="MoveButton">
                                                 <connections>
-                                                    <action selector="MoveButtonAction:" destination="BYZ-38-t0r" id="OdY-J9-k9h"/>
+                                                    <action selector="MoveButtonAction:" destination="BYZ-38-t0r" id="eI1-cy-XwO"/>
                                                 </connections>
                                             </barButtonItem>
                                         </items>
@@ -111,6 +92,7 @@
                                         <color key="barTintColor" red="0.23529411759999999" green="0.20000000000000001" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                     </toolbar>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="yXa-xg-IkR" firstAttribute="top" secondItem="OWb-j7-zju" secondAttribute="bottom" id="5uB-Ru-Swn"/>
@@ -128,12 +110,14 @@
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M82-iO-fdq">
                                 <rect key="frame" x="0.0" y="64" width="600" height="445"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="M82-iO-fdq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3rV-gX-HHs"/>

@@ -10,7 +10,6 @@ void prelim(void) {
 }
 
 void freeze(int boss) {
-	char *x, *y;
 	FILE *fp;
 	int key;
 	if (boss) {
@@ -57,7 +56,6 @@ void freeze(int boss) {
 
 
 void thaw(void) {
-	char *x, *y;
 	FILE *fp;
 	int key;
 
@@ -531,7 +529,7 @@ void newcnd(void) {
 void newqad(int shutup) {
 	int quadnum = d.galaxy[quadx][quady];
 	int newnum = d.newstuf[quadx][quady];
-	int i, j, ix, iy, nplan;
+	int i, j, ix = 0, iy = 0, nplan;
 
 	iattak = 1;
 	justin = 1;

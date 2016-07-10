@@ -62,6 +62,10 @@ EXTERN struct foo {
 EXTERN char
 		quad[11][11];	// contents of our quadrant
 
+////////////////////////////////
+EXTERN char* cmbResult;
+////////////////////////////////
+EXTERN int cmbQuestionIndex;
 // Scalar variables that are needed for freezing the game
 // are placed in a structure. #defines are used to access by their
 // original names. Gee, I could have done this with the d structure,
@@ -490,3 +494,6 @@ void capture(void);
 #else
 #define REPORTS (condit==IHDOCKED || damage[DRADIO]<=0.0)
 #endif
+
+char UserInput[4096];
+

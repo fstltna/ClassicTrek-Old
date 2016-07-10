@@ -357,51 +357,80 @@ void score(int inGame) {
 	skip(2);
     if (inGame) prout("Your score so far --");
     else prout("Your score --");
-	if (d.nromkl)
-		printf(d.nromkl> 1 ? "%6d Romulan ships destroyed            %5d\n" : "%6d Romulan ship destroyed             %5d\n",
+    char result[100000];
+    
+    if (d.nromkl){
+		sprintf(result, d.nromkl> 1 ? "%6d Romulan ships destroyed            %5d\n" : "%6d Romulan ship destroyed             %5d\n",
 			   d.nromkl, 20*d.nromkl);
-	if (dnromrem)
-		printf(dnromrem > 1 ? "%6d Romulan ships captured             %5d\n" : "%6d Romulan ship captured              %5d\n",
+        prout(result);
+    }
+    if (dnromrem){
+		sprintf(result,dnromrem > 1 ? "%6d Romulan ships captured             %5d\n" : "%6d Romulan ship captured              %5d\n",
 			   dnromrem, dnromrem);
-	if (d.killk)
-		printf(d.killk > 1 ? "%6d ordinary Klingon ships destroyed   %5d\n" : "%6d ordinary Klingon ship destroyed    %5d\n",
+        prout(result);
+    }
+    if (d.killk){
+		sprintf(result,d.killk > 1 ? "%6d ordinary Klingon ships destroyed   %5d\n" : "%6d ordinary Klingon ship destroyed    %5d\n",
 			   d.killk,  10*d.killk);
-	if (d.killc)
-		printf(d.killc > 1 ? "%6d Klingon Commander ships destroyed  %5d\n" : "%6d Klingon Commander ship destroyed   %5d\n",
+        prout(result);
+    }
+    if (d.killc){
+		sprintf(result,d.killc > 1 ? "%6d Klingon Commander ships destroyed  %5d\n" : "%6d Klingon Commander ship destroyed   %5d\n",
 			   d.killc, 50*d.killc);
-	if (d.nsckill)
-		printf("%6d Super-Commander ship destroyed     %5d\n",
+        prout(result);
+    }
+    if (d.nsckill){
+		sprintf(result,"%6d Super-Commander ship destroyed     %5d\n",
 			   d.nsckill, 200*d.nsckill);
-	if (ithperd)
-		printf("%6.2f Klingons per stardate              %5d\n",
+        prout(result);
+    }
+    if (ithperd){
+		sprintf(result,"%6.2f Klingons per stardate              %5d\n",
 			   perdate, ithperd);
+        prout(result);
+    }
 #ifdef CAPTURE
-	if (kcaptured)
-		printf(kcaptured > 1 ? "%6d Klingons captured                  %5d\n" : "%6d Klingon captured                   %5d\n",
+    if (kcaptured){
+		sprintf(result,kcaptured > 1 ? "%6d Klingons captured                  %5d\n" : "%6d Klingon captured                   %5d\n",
 		        kcaptured, 3*kcaptured);
+        prout(result);
+    }
 #endif
-	if (d.starkl)
-		printf(d.starkl > 1 ? "%6d stars destroyed by your action     %5d\n" : "%6d star destroyed by your action      %5d\n",
+    if (d.starkl){
+		sprintf(result,d.starkl > 1 ? "%6d stars destroyed by your action     %5d\n" : "%6d star destroyed by your action      %5d\n",
 			   d.starkl, -5*d.starkl);
-	if (d.nplankl)
-		printf(d.nplankl > 1 ? "%6d planets destroyed by your action   %5d\n" : "%6d planet destroyed by your action    %5d\n",
+    }
+    if (d.nplankl){
+		sprintf(result,d.nplankl > 1 ? "%6d planets destroyed by your action   %5d\n" : "%6d planet destroyed by your action    %5d\n",
 			   d.nplankl, -10*d.nplankl);
-	if (d.basekl)
-		printf(d.basekl > 1 ? "%6d bases destroyed by your action     %5d\n" : "%6d base destroyed by your action      %5d\n",
+        prout(result);
+    }
+    if (d.basekl){
+		sprintf(result,d.basekl > 1 ? "%6d bases destroyed by your action     %5d\n" : "%6d base destroyed by your action      %5d\n",
 			   d.basekl, -100*d.basekl);
-	if (nhelp)
-		printf(nhelp > 1 ? "%6d calls for help from starbase       %5d\n" : "%6d call for help from starbase        %5d\n",
+        prout(result);
+    }
+    if (nhelp){
+		sprintf(result,nhelp > 1 ? "%6d calls for help from starbase       %5d\n" : "%6d call for help from starbase        %5d\n",
 			   nhelp, -45*nhelp);
-	if (casual)
-		printf(casual > 1 ? "%6d casualties incurred                %5d\n" : "%6d casualty incurred                  %5d\n",
+        prout(result);
+    }
+    if (casual){
+		sprintf(result,casual > 1 ? "%6d casualties incurred                %5d\n" : "%6d casualty incurred                  %5d\n",
 			   casual, -casual);
-	if (klship)
-		printf(klship > 1 ? "%6d ships lost or destroyed            %5d\n" : "%6d ship lost or destroyed             %5d\n",
+        prout(result);
+    }
+    if (klship){
+		sprintf(result,klship > 1 ? "%6d ships lost or destroyed            %5d\n" : "%6d ship lost or destroyed             %5d\n",
 			   klship, -100*klship);
+        prout(result);
+    }
 #ifdef CLOAKING
-	if (ncviol>0)
-		printf(ncviol > 1 ? "%6d Treaty of Algeron violations       %5d\n" : "%6d Treaty of Algeron violation        %5d\n",
+    if (ncviol>0){
+		sprintf(result,ncviol > 1 ? "%6d Treaty of Algeron violations       %5d\n" : "%6d Treaty of Algeron violation        %5d\n",
 		       ncviol, -100*ncviol);
+        prout(result);
+    }
 #endif
 	if (alive==0)
 		prout("Penalty for getting yourself killed        -200");
@@ -418,8 +447,13 @@ void score(int inGame) {
 		printf("           %5d\n", iwon);
 	}
 	skip(2);
-    printf("TOTAL SCORE                               %5d\n", iscore);
-    if (inGame && skill < SGOOD) printf("REMEMBER--The score doesn't really matter until the mission is accomplished!\n");
+    sprintf(result,"TOTAL SCORE                               %5d\n", iscore);
+    prout(result);
+    if (inGame && skill < SGOOD){
+        
+    printf("REMEMBER--The score doesn't really matter until the mission is accomplished!\n");
+        prout(result);
+    }
 }
 
 void plaque(void) {
@@ -430,10 +464,14 @@ void plaque(void) {
 	char winner[128];
 
 	skip(2);
-	
+    char result[10000];
 	while (fp == NULL) {
-		printf("File or device name for your plaque:");
-		fgets(winner, 128, stdin);
+		sprintf(result,"File or device name for your plaque:");
+        prout(result);
+//		fgets(winner, 128, stdin);
+        
+        strcpy(winner,"CMB");//cmn
+        
 		winner[strlen(winner)-1] = '\0';
 		fp = fopen(winner, "w");
 		if (fp==NULL) {
@@ -441,8 +479,11 @@ void plaque(void) {
 		}
 	}
 
-	printf("Enter name to go on plaque (up to 30 characters):");
-	fgets(winner, 128, stdin);
+	sprintf(result,"Enter name to go on plaque (up to 30 characters):");
+    prout(result);
+//	fgets(winner, 128, stdin);
+    strcpy(winner,"CMB1");//cmn
+
 	winner[strlen(winner)-1] = '\0';
 	winner[30] = '\0';
 	nskip = 64 - strlen(winner)/2;
